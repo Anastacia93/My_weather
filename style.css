@@ -1,0 +1,80 @@
+#search-text-input {
+ display: inline-block;
+ background: rgba(66, 127, 219, 0.3);
+ border: 0.5px dotted rgb(112, 133, 226);
+ outline: none;
+ padding: 10px 15px;
+ border-radius: 30px;
+}
+
+#search-text {
+ background: rgba(66, 127, 219, 0.3);
+ border: 0.5px dotted rgb(112, 133, 226);
+ outline: none;
+ padding: 10px 15px;
+ border-radius: 30px;
+}
+
+.search__header {
+ margin: 40px auto;
+}
+
+.search__header_wrapper {
+ margin: 0 auto;
+}
+
+#search-form {
+ width: 40%;
+ display: inline-block;
+ margin-left: 23%;
+}
+
+.form__wrapper {
+ display: block;
+}
+
+#current-city {
+ background: rgba(3, 167, 31, 0.3);
+ border: 0.5px dotted rgb(112, 133, 226);
+ outline: none;
+ padding: 10px 20px;
+ border-radius: 30px;
+}
+
+.odesa {
+ text-align: right;
+}
+.feel {
+ font-size: larger;
+}
+.ukraine {
+ margin-bottom: 50px;
+}
+.container {
+ width: 850px;
+ background: rgb(233, 116, 170, 0.3);
+ border: 1px dashed rgb(240, 18, 184);
+ margin-top: 30px;
+ color: gray;
+ padding-bottom: 40px;
+}
+.card {
+ border-radius: 50%;
+ width: 120px;
+ background: rgba(66, 127, 219, 0.3);
+ border: 1px dotted rgb(74, 74, 177);
+ margin: 0 auto;
+}
+.card-title {
+ text-align: center;
+}
+.text-weather {
+ text-align: center;
+}
+h4 {
+ font-style: italic;
+ font-size: xx-large;
+}
+p {
+ margin: 0px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <title>Weather App🌞</title>
+  <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+  <div class="container">
+   <div class="search__header">
+    <div class="search__header_wrapper">
+     <form id="search-form">
+      <div class="form__wrapper">
+       <input
+        type="text"
+        placeholder="Enter your city"
+        autofocus
+        id="search-text-input" />
+       <input type="submit" value="search" id="search-text" />
+      </div>
+     </form>
+     <button id="current-city">Current City</button>
+    </div>
+   </div>
+
+   <div class="row ukraine">
+    <div class="col-6">
+     <h6>It's cold today</h6>
+     <p class="feel">
+      <span id="temperature"> 👉 2 </span> <a href="#" id="celsium">°C </a> |
+      <a href="#" id="fahrenheit">°F </a>
+     </p>
+     <p class="feel">feels like -2C 🥶</p>
+    </div>
+    <div class="col-6 odesa">
+     <h4 id="currentCity">Odesa, Ukraine</h4>
+     <p id="currentData"></p>
+     <p id="cloud">☁ Cloudy</p>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col">
+     <h5 class="card-title">Wednesday</h5>
+     <div class="card">
+      <div class="card-body">
+       <p class="text-weather">text weather🌞</p>
+      </div>
+     </div>
+    </div>
+    <div class="col">
+     <h5 class="card-title">Thursday</h5>
+     <div class="card">
+      <div class="card-body">
+       <p class="text-weather">text weather🌞</p>
+      </div>
+     </div>
+    </div>
+    <div class="col">
+     <h5 class="card-title">Friday</h5>
+     <div class="card">
+      <div class="card-body">
+       <p class="text-weather">text weather🌞</p>
+      </div>
+     </div>
+    </div>
+    <div class="col">
+     <h5 class="card-title">Saturday</h5>
+     <div class="card">
+      <div class="card-body">
+       <p class="text-weather">text weather🌞</p>
+      </div>
+     </div>
+    </div>
+    <div class="col">
+     <h5 class="card-title">Sunday</h5>
+     <div class="card">
+      <div class="card-body">
+       <p class="text-weather">text weather🌞</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="app.js"></script>
+ </body>
+</html>
