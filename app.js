@@ -79,7 +79,7 @@ function showWeather(response) {
 
 currentDate.innerHTML = formatDate(now);
 
-let apiKey = "ca5af28648d86b7925348bb9fb85cd3a";
+let apiKey = "5af46b7c735c00e84f63fde5be627fa5";
 let searchInput = document.querySelector("#search-text-input");
 
 let form = document.querySelector("#search-form");
