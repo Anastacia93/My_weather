@@ -65,16 +65,22 @@ function formatDate(now) {
 }
 
 function showWeather(response) {
+  console.log(response.data.weather[0].icon);
  let temperature = Math.round(response.data.main.temp);
- console.log(response.data.weather[0].main);
  let city = response.data.name;
  let cloud = response.data.weather[0].main;
  let h4 = document.querySelector("#currentCity");
+ let icon = response.data.weather[0].icon;
  h4.innerHTML = `${city}`;
  let cloudy = document.querySelector("#cloud");
  cloudy.innerHTML = `${cloud}`;
  let temp = document.querySelector("#temperature");
  temp.innerHTML = `${temperature}`;
+ let iconElement = document.querySelector("#icon");
+ iconElement.setAttribute(
+  "src",
+  `https://openweathermap.org/img/wn/${icon}@2x.png`
+ );
 }
 
 currentDate.innerHTML = formatDate(now);
