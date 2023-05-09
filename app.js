@@ -67,6 +67,7 @@ function formatDate(now) {
 function showWeather(response) {
   console.log(response.data.weather[0].icon);
  let temperature = Math.round(response.data.main.temp);
+ celsiusTemperature = response.data.main.temp;
  let city = response.data.name;
  let cloud = response.data.weather[0].main;
  let h4 = document.querySelector("#currentCity");
@@ -109,6 +110,31 @@ function getCurrentPosition() {
 let button = document.querySelector("#current-city");
 button.addEventListener("click", getCurrentPosition);
 
+
+function temperatureC(event) {
+ event.preventDefault();
+ let link = document.querySelector("#temperature");
+ let tempC = Math.round(celsiusTemperature);
+ link.innerHTML = `${tempC}`;
+}
+function temperatureF(event) {
+ event.preventDefault();
+ let tempF = Math.round((celsiusTemperature * 9) / 5 + 32);
+ let fahrengeit = document.querySelector("#temperature");
+ fahrengeit.innerHTML = `${tempF}`;
+}
+
+let celsiusTemperature=null;
+
+let celsium = document.querySelector("#celsium");
+celsium.addEventListener("click", temperatureC);
+let fahrenheite = document.querySelector("#fahrenheit");
+fahrenheite.addEventListener("click", temperatureF);
+
+
+
+
+
 // function search(event) {
 //  event.preventDefault();
 //  let searchInput = document.querySelector("#search-text-input");
@@ -122,22 +148,3 @@ button.addEventListener("click", getCurrentPosition);
 // }
 // let form = document.querySelector("form");
 // form.addEventListener("submit", search);
-
-// function temperatureC(event) {
-//  event.preventDefault();
-//  let tempC = 2;
-//  let link = document.querySelector("#temperature");
-//  link.innerHTML = `${tempC}`;
-// }
-// function temperatureF(event) {
-//  event.preventDefault();
-//  let tempC = 2;
-//  let tempF = Math.round((tempC * 9) / 5 + 32);
-//  let fahrengeit = document.querySelector("#temperature");
-//  fahrengeit.innerHTML = `${tempF}`;
-// }
-
-// let celsium = document.querySelector("#celsium");
-// celsium.addEventListener("click", temperatureC);
-// let fahrenheite = document.querySelector("#fahrenheit");
-// fahrenheite.addEventListener("click", temperatureF);
