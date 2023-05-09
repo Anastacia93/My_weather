@@ -65,17 +65,20 @@ function formatDate(now) {
 }
 
 function showWeather(response) {
-  console.log(response.data.weather[0].icon);
+  console.log(response.data.wind.speed);
  let temperature = Math.round(response.data.main.temp);
  celsiusTemperature = response.data.main.temp;
  let city = response.data.name;
  let cloud = response.data.weather[0].main;
  let h4 = document.querySelector("#currentCity");
  let icon = response.data.weather[0].icon;
+ let wind = response.data.wind.speed;
  h4.innerHTML = `${city}`;
  let cloudy = document.querySelector("#cloud");
  cloudy.innerHTML = `${cloud}`;
  let temp = document.querySelector("#temperature");
+ let windy = document.querySelector("#wind");
+ windy.innerHTML = ` ${wind} km/h`
  temp.innerHTML = `${temperature}`;
  let iconElement = document.querySelector("#icon");
  iconElement.setAttribute(
