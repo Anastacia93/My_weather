@@ -39,6 +39,8 @@
 // }
 // showWeather();
 
+window.addEventListener("load", getCurrentPosition);
+
 let currentDate = document.querySelector("#currentData");
 let now = new Date();
 
